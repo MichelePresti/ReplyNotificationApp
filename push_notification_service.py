@@ -33,6 +33,9 @@ class PushNotification:
             },
             "priority": priority
         }
-        r = requests.post(URL, data=json.dumps(data), headers=self.headers)
+        try:
+            r = requests.post(URL, data=json.dumps(data), headers=self.headers)
+        except requests.ConnectionError as e:
+            print('CONNECTION ERROR - CHECK PLEASE', e.response)
         print(r.content)
 
