@@ -1,0 +1,7 @@
+{
+  "name": "Reply AMS",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

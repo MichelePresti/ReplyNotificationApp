@@ -1,0 +1,22 @@
+<ion-header [translucent]="true">
+    <ion-toolbar>
+        <ion-title>
+            Impostazioni
+        </ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+    <ion-item>
+        <ion-label>Allarme notifica</ion-label>
+        <ion-toggle slot="end" (click)="setAlarmStatus()" [(ngModel)]="checked[0]"></ion-toggle>
+    </ion-item>
+    <ion-item style="padding:10px;">
+        <ion-label>Ora inizio notifica</ion-label>
+        <ion-datetime [value]="startDate" #startHour (ionChange)="setHour(startHour.value, 'start')" slot="end" presentation="time" showDefaultButtons="true"></ion-datetime>
+    </ion-item>
+    <ion-item style="padding:10px;" [ngClass]="{'Hide': !startDateSet}">
+        <ion-label>Ora fine notifica</ion-label>
+        <ion-datetime [value]="endDate" #endHour (ionChange)="setHour(endHour.value , 'end')" slot="end" presentation="time" showDefaultButtons="true"></ion-datetime>
+    </ion-item>
+</ion-content>

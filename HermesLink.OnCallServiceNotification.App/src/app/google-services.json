@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "128329691885",
+    "project_id": "replyams-64832",
+    "storage_bucket": "replyams-64832.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:128329691885:android:e98b02228cecb78dc3d2e4",
+        "android_client_info": {
+          "package_name": "it.ams.reply"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "128329691885-cqjm6b52b53crjr6mc0ff664pe071t94.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA9Dqs_MlntlJbHtH2wW67jNuFzs79g5gA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "128329691885-cqjm6b52b53crjr6mc0ff664pe071t94.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

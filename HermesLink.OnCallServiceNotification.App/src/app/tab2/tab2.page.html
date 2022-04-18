@@ -1,0 +1,21 @@
+<ion-header [translucent]="true">
+    <ion-toolbar>
+        <ion-title>
+            Ticket
+        </ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+    <ion-card class="ticket-container" [ngClass]="{'new-message': newMessage}" (click)="setReadMessage()">
+        <h2>{{title}}</h2>
+        <p>{{message}}</p>
+    </ion-card>
+    <!--
+    <ion-item>
+        <ion-button (click)="checkDate()">
+            CHECK
+        </ion-button>
+    </ion-item>
+  -->
+</ion-content>
